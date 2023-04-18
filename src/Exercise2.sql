@@ -1,0 +1,1 @@
+select t1.id, t1.name as n, t1.age from t1 where t1.id not in (select t2.id from t2) or t1.name not in (select t2.name from t2) or t1.age not in(select t2.age from t2) order by t1.id;
